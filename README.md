@@ -5,6 +5,7 @@ A responsive and user-friendly web app to generate **multiple QR Codes** from te
 
 ## 🔗 Live Demo
 👉 [Try it now](https://fikr-habib.github.io/qr-code/) 
+👉 [Try it now](https://fikr-habib.github.io/qr-code/Multiple.html)
 
 
 ## ✨ Features

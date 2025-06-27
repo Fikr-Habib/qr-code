@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- 📄 Basic Page Setup -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QR Code Generator - Made by Habib</title>
+
+  <!-- 🖼️ Favicon -->
+  <link rel="icon" type="image/png" href="/logo.png" />
+
+  <!-- 🎨 Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- 🔍 SEO Meta Tags -->
+  <meta name="title" content="QR Code Generator - Fast and Easy QR Creation" />
+  <meta name="description" content="Create customized QR codes for text, links, and more with our free and easy-to-use QR Code Generator." />
+  <meta name="keywords" content="QR Code, QR Generator, Make QR Code, Free QR Code Tool, Online QR Code Generator, QR Code for Marketing" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- 🔐 Google Site Verification -->
+  <meta name="google-site-verification" content="WHLWQb7_hoW3fRhZ2XmOLPpfN2EubRtyQmTEq6JmpdA" />
+
+  <!-- 🌐 Open Graph Tags (Facebook, LinkedIn) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://qr-code-psi-three-55.vercel.app/" />
+  <meta property="og:title" content="QR Code Generator - Fast and Easy QR Creation" />
+  <meta property="og:description" content="Create customized QR codes for text, links, and more with our free and easy-to-use QR Code Generator." />
+  <meta property="og:image" content="https://qr-code-psi-three-55.vercel.app/logo.png" />
+  <meta property="og:site_name" content="QR Code Generator" />
+
+  <!-- 🐦 Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://qr-code-psi-three-55.vercel.app/" />
+  <meta name="twitter:title" content="QR Code Generator - Fast and Easy QR Creation" />
+  <meta name="twitter:description" content="Create customized QR codes for text, links, and more with our free and easy-to-use QR Code Generator." />
+  <meta name="twitter:image" content="https://qr-code-psi-three-55.vercel.app/logo.png" />
+</head>
+
+<body>
+
+  <!-- ✅ Main Container -->
+  <div class="qr-container">
+
+    <!-- 🧾 Heading -->
+    <div class="qr-heading">QR Code Generator</div>
+
+    <!-- ✍️ Input Section -->
+    <section class="user-input">
+      <input 
+        type="text"
+        id="input_text"
+        name="input_text"
+        class="qr-input"
+        placeholder="Enter text or URL"
+        autocomplete="off"
+      />
+      <button class="qr-button" type="submit">GENERATE</button>
+    </section>
+
+    <!-- 🎯 QR Code Display (Initially Hidden) -->
+    <div class="qr-code" style="display: none;"></div>
+
+    <!-- 📥 Download Button (Initially Hidden) -->
+    <a 
+      id="downloadLink"
+      class="qr-download"
+      style="display: none;"
+      download="qrcode.png"
+    >
+      Download QR Code
+    </a>
+  </div>
+
+  <!-- ℹ️ About Button (Bottom Icon) -->
+  <button id="About">
+    <img src="/me.JPG" alt="About Icon" />
+  </button>
+
+  <!-- 📜 Scripts -->
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script> <!-- Tooltip Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script> <!-- QR Generator -->
+  <script src="main.js"></script> <!-- Your custom logic -->
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Multiple QR Code Generator</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/logo.png" />
+  <link rel="stylesheet" href="style.css" />
+  
+  <link rel="stylesheet" href="Multiple.css" />
+</head>
+<body>
+
+<!-- About Button (e.g., for Info or Contact Modal) -->
+  <button id="About">
+    <img src="/me.JPG" alt="About Icon" />
+  </button>
+
+  <div class="qr-container">
+    
+ 
+    <h1 class="qr-heading">Multiple QR Code Generator</h1>
+
+ 
+    <section class="user-input">
+      <div id="input-container">
+        <!-- First Input Group (default) -->
+        <div class="input-group">
+          <input 
+            type="text" 
+            name="input_text" 
+            class="qr-input" 
+            placeholder="Enter text or URL" 
+            autocomplete="off" 
+          />
+          <!-- Button to remove this input -->
+          <button 
+            class="remove-btn" 
+            onclick="removeInput(this)">
+            Remove
+          </button>
+        </div>
+      </div>
+
+   
+      <div class="button-group">
+        <!-- Button to add a new input field -->
+        <button 
+          id="addInputBtn" 
+          class="qr-button">
+          Add Another Input
+        </button>
+
+        <!-- Button to generate all QR codes -->
+        <button 
+          id="generateBtn" 
+          class="qr-button">
+          Generate QR Codes
+        </button>
+
+        <!-- Button to download all QR codes -->
+        <button 
+          id="downloadAllBtn" 
+          class="qr-button">
+          Download All QR Codes
+        </button>
+      </div>
+    </section>
+
+    <!-- Container for all generated QR codes -->
+    <div 
+      id="qr-codes-container" 
+      class="qr-codes-container">
+    </div>
+  </div>
+
+  <!-- QR Code Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+<!-- JavaScript Libraries -->
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script> <!-- Tooltip Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script> <!-- QR Code Generator -->
+  
+  <script src="Multiple.js"></script>
+</body>
+</html>
